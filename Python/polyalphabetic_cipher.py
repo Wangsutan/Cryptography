@@ -22,7 +22,7 @@ class PolyalphabeticCipher(Cipher):
         return [self.alphabet.find(char) + 1 for char in self.keyword]
 
     def encrypt(self) -> None:
-        sign: int = 1 if not self.is_decrypt else -1
+        sign: int = -1 if self.is_decrypt else 1
         for i in range(len(self.plain_text)):
             index_new: int = self.change_index(
                 self.alphabet_index[self.plain_text[i]],
