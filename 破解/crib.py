@@ -21,7 +21,9 @@ def check_crib(string_cipyer: str, crib: str) -> List[int]:
 
 
 if __name__ == "__main__":
-    string_cipyer: str = "".join(random.choice(string.ascii_uppercase) for _ in range(100))
+    string_cipyer: str = "".join(
+        random.choice(string.ascii_uppercase) for _ in range(100)
+    )
     crib: str = input("CRIB: ").upper()
     consistency_index: List[int] = check_crib(string_cipyer, crib)
     print(f"{len(consistency_index)} results:\n{consistency_index}")

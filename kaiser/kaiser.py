@@ -12,5 +12,5 @@ for c in plain_text:
     c_new = alphabet[c_new_idx]
     cipher_text += c_new
 
-with open("cipher.txt", 'w') as f:
+with open("cipher.txt", "w") as f:
     f.write(cipher_text)

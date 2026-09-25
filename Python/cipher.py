@@ -53,7 +53,9 @@ class Cipher:
         return self.alphabet[index_new]
 
     def encrypt(self) -> None:
-        self.encrypted_text = "".join(self.encrypt_char(char) for char in self.plain_text)
+        self.encrypted_text = "".join(
+            self.encrypt_char(char) for char in self.plain_text
+        )
 
     def encrypt_in_parallel(self) -> None:
         with concurrent.futures.ThreadPoolExecutor() as executor:

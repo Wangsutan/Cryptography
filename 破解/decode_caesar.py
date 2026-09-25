@@ -3,7 +3,7 @@ from collections import Counter
 
 
 def getCipherTextFrom(cipherFile):
-    with open(cipherFile, 'r') as f:
+    with open(cipherFile, "r") as f:
         cipherText = f.read()
 
     cipherText = list(filter(str.isalpha, cipherText))
@@ -32,7 +32,7 @@ def decode(alphabet, cipherChars, letterFrequency, charsCounter):
         print(f"Move {distanceIndex}:")
         print("".join(plainChars))
 
-        if input("\nReally?(`Enter` to continue, q to quit):") != '':
+        if input("\nReally?(`Enter` to continue, q to quit):") != "":
             break
 
 
