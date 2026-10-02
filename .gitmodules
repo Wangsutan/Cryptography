@@ -1,0 +1,3 @@
+[submodule "Rust/cipher"]
+	path = Rust/cipher
+	url = https://github.com/Wangsutan/cipher.git
